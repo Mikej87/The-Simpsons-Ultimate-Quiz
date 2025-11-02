@@ -74,7 +74,7 @@ loadQuestion();
 
 function loadQuestion() {
     const currentQuestion = quizData[currentQuestionIndex];
-    questionElement.innerText = currentQuestion.question;
+    questionElement.innerText = currentQuestion;
     optionsElement.innerHTML = '';
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
@@ -85,16 +85,21 @@ function loadQuestion() {
 
 }
 
-function checkAnswer(selectedAnswer) {
-    const currentQuestion = quizData[currentQuestionIndex];
-    if (selectedAnswer === currentQuestion.correctAnswer) {
-        score++;
+function checkAnswer() {
+    if (selectedAnswer === null) {
+        alert("Please select an answer before submitting.");
+        return;
+    }
+
+    const currentQuizData = quizData[currentQuestioon];
+    if (selectedAnswer === currentQuestion) {
+      }  score++;
         resultElement.innerText = "Correct!";
     }  else {
         resultElement.innerText = `Doh! The correct answer was: ${currentQuestion.options[currentQuestion.correctAnswer]}`;
     } 
-    currentQuestionIndex++;
-    if (currentQuestionIndex < quizData.length) {
+    currentQuestion++;
+    if (currentQuestionQuizData < quizData.length) {
         loadQuestion();
     } else {
         showFinalScore();
