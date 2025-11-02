@@ -1,3 +1,9 @@
+const submitButton = document.getElementById('submit-btn');
+
+startQuizBtn.addEventListener('click', () => {
+    loadQuestion();
+    startQuizBtn.style.display = 'none';
+
 const quizData = [
     {
         question: "What is the name of the bartender in Moe's Tavern?",
