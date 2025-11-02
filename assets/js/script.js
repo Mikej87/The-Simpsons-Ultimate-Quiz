@@ -85,7 +85,7 @@ function checkAnswer(selectedAnswer) {
         score++;
         resultElement.innerText = "Correct!";
     }  else {
-        resultElement.innerText = `Wrong! The correct answer was: ${currentQuestion.options[currentQuestion.correctAnswer]}`;
+        resultElement.innerText = `Doh! The correct answer was: ${currentQuestion.options[currentQuestion.correctAnswer]}`;
     } 
     currentQuestionIndex++;
     if (currentQuestionIndex < quizData.length) {
@@ -93,3 +93,16 @@ function checkAnswer(selectedAnswer) {
     } else {
         showFinalScore();
     }
+
+    currentQuestionindex++;
+    if (currentQuestionIndex < quizData.length) {
+        loadQuestion();
+    } else {
+        resultElement.innerText = `Quiz Over! Your final score is ${score} out of ${quizData.length}.`;
+        submitButton.disabled = true;
+    }
+}
+
+submitButton.addEventListener('click', () => {
+
+});
