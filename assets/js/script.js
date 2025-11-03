@@ -1,14 +1,16 @@
+console.log("Quiz script loaded");
+
 const submitButton = document.getElementById('submit-btn');
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const quizContainer = document.querySelector('quiz-container');
 
 startQuizBtn.addEventListener('click', () => {
     loadQuestion();
     startQuizBtn.style.display = 'none';
 });
 
-const startQuizBtn = document.getElementById('start-quiz-btn');
-const quizContainer = document.querySelector('quiz-container');
-
-startButton.addEventListener('click', () => {
+#startQuizBtn.addEventListener('click', () => {
+    console.log("Button clicked");
     quizContainer.style.display = 'block';
     startButton.style.display = 'none';
     loadQuestion();

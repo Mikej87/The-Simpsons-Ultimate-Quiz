@@ -56,3 +56,15 @@
     font-size: 1.2em;
     margin-top: 20px;
 }
+
+background {
+    background-image: url('simpsons_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}   
