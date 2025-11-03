@@ -3,14 +3,14 @@ console.log("Quiz script loaded");
 const startQuizBtn = document.getElementById('start-quiz-btn');
 const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
-
-startQuizBtn.addEventListener('click', () => {
+console.log(startBtn);
+startBtn.addEventListener('click', () => {
     quizData();
     startQuizBtn.style.display = 'none';
 });
 
-startQuizBtn.addEventListener('click', () => {
-    console.log(quizContainer);
+startBtn.addEventListener('click', () => {
+    console.log('Button clicked ');
     quizContainer.style.display = 'block';
     startQuizBtn.style.display = 'none';
     loadQuestion();
