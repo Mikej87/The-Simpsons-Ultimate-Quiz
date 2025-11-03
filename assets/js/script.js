@@ -5,12 +5,12 @@ const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
 
 startQuizBtn.addEventListener('click', () => {
-    loadQuestion();
+    quizData();
     startQuizBtn.style.display = 'none';
 });
 
 startQuizBtn.addEventListener('click', () => {
-    console.log("Button clicked");
+    console.log(quizContainer);
     quizContainer.style.display = 'block';
     startQuizBtn.style.display = 'none';
     loadQuestion();
@@ -74,15 +74,16 @@ const quizData = [
     }
 ];
 
-const startbtn = document.getElementById('start-quiz-btn');
-const quizContainer = document.querySelector('.quiz-container');
+// Removed duplicate declaration and incorrect event listener for startQuizBtn
+// const startQuizBtn = document.getElementById('start-quiz-btn');
+// const quizcontainer = document.querySelector('.quiz-container');
 
-startbtn.addEventListener('click', () => {
-    quizContainer.style.display = 'block';
-    startbtn.style.display = 'none';
-    loadQuestion();
-}S
-document.addEventListener()
+// startquizbtn.addEventListener('click', () => {
+//     quizContainer.style.display = 'block';
+//     startquizbtn.style.display = 'none';
+//     loadQuestion();
+// });
+
 
 
 const optionsContainer = document.getElementById('options');
