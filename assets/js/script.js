@@ -1,19 +1,18 @@
 console.log("Quiz script loaded");
 
-const startQuizButton = document.getElementById('start-quiz-btn');
 const startQuizBtn = document.getElementById('start-quiz-btn');
 const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
 
-startQuizButton.addEventListener('click', () => {
+startQuizBtn.addEventListener('click', () => {
     loadQuestion();
-    startButton.style.display = 'none';
+    startQuizBtn.style.display = 'none';
 });
 
 startQuizBtn.addEventListener('click', () => {
     console.log("Button clicked");
     quizContainer.style.display = 'block';
-    startButton.style.display = 'none';
+    startQuizBtn.style.display = 'none';
     loadQuestion();
 });
 
@@ -75,6 +74,19 @@ const quizData = [
     }
 ];
 
+const optionsContainer = document.getElementById('options');
+const options = ['option1', 'option2', 'option3', 'option4'];
+options.forEach(option, index => {
+    const optionElement = document.getElementById('button');
+optionElement.textContent = option;
+optionElement.addEventListener('click', () => {
+    selectAnswer(index);
+});
+optionsContainer.appendChild(optionElement);
+});  
+
+
+
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -125,11 +137,11 @@ function checkAnswer() {
         loadQuestion();
     } else {
         resultElement.innerText = `Quiz Over! Your final score is ${score} out of ${quizData.length}.`;
-        submitButton.disabled = true;
+        startQuizBtn.disabled = true;
     }
 }
 
-submitButton.addEventListener('click', () => {
+startQuizBtn.addEventListener('click', () => {
     checkAnswer();
 });
 
