@@ -3,6 +3,16 @@ const submitButton = document.getElementById('submit-btn');
 startQuizBtn.addEventListener('click', () => {
     loadQuestion();
     startQuizBtn.style.display = 'none';
+});
+
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const quizContainer = document.querySelector('quiz-container');
+
+startButton.addEventListener('click', () => {
+    quizContainer.style.display = 'block';
+    startButton.style.display = 'none';
+    loadQuestion();
+});
 
 const quizData = [
     {
@@ -81,9 +91,9 @@ function loadQuestion() {
         button.innerText = option;
         button.onclick = () => selectAnswer(index);
         optionsElement.appendChild(button);
-    }
+    });
 
-}
+};
 
 function checkAnswer() {
     if (selectedAnswer === null) {
@@ -112,8 +122,8 @@ function checkAnswer() {
         resultElement.innerText = `Quiz Over! Your final score is ${score} out of ${quizData.length}.`;
         submitButton.disabled = true;
     }
-}
+
 
 submitButton.addEventListener('click', () => {
-
+    checkAnswer();
 });
