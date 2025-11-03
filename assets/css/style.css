@@ -1,5 +1,6 @@
 body {
-    background-image:url() ../bart.png;
+    color: lightskyblue;
+
 }
 
 h1 {
@@ -7,13 +8,16 @@ h1 {
     font-family: 'Arial', sans-serif;
     color: #ffcc00;
     text-shadow: 2px 2px #000;
-    background-image: url(../images/cloud.jpg)
+    background-image: url(../images/cloud.jpg);
+    background-size: cover;
+    padding: 20px;
+    background-position: center;
 }
 
 
 .logo {
-    url('simpsons_logo.png');
-    display: block;
+    background-image: url('simpsons_logo.png');
+    ;
     margin: 20px auto;
     max-width: 300px;
     height: auto;
@@ -42,7 +46,7 @@ h1 {
 }
 
 .option {
-    margin 10px;
+    margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     cursor: pointer;

@@ -3,7 +3,7 @@ console.log("Quiz script loaded");
 const startQuizBtn = document.getElementById('start-quiz-btn');
 const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
-console.log(startBtn);
+console.log(startQuizBtn);
 startBtn.addEventListener('click', () => {
     quizData();
     startQuizBtn.style.display = 'none';
