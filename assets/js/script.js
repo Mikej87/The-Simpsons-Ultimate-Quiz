@@ -76,14 +76,14 @@ const quizData = [
 
 const optionsContainer = document.getElementById('options');
 const options = ['option1', 'option2', 'option3', 'option4'];
-options.forEach(option, index => {
-    const optionElement = document.getElementById('button');
+options.forEach((option, index => {
+const optionElement = document.getElementById('btn');
 optionElement.textContent = option;
 optionElement.addEventListener('click', () => {
     selectAnswer(index);
 });
 optionsContainer.appendChild(optionElement);
-});  
+}  
 
 
 
