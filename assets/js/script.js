@@ -1,15 +1,16 @@
 console.log("Quiz script loaded");
 
-const submitButton = document.getElementById('submit-btn');
+const startQuizButton = document.getElementById('start-quiz-btn');
 const startQuizBtn = document.getElementById('start-quiz-btn');
-const quizContainer = document.querySelector('quiz-container');
+const quizContainer = document.getElementById('quiz-container');
+const submitButton = document.getElementById('submit-btn');
 
-startQuizBtn.addEventListener('click', () => {
+startQuizButton.addEventListener('click', () => {
     loadQuestion();
-    startQuizBtn.style.display = 'none';
+    startButton.style.display = 'none';
 });
 
-#startQuizBtn.addEventListener('click', () => {
+startQuizBtn.addEventListener('click', () => {
     console.log("Button clicked");
     quizContainer.style.display = 'block';
     startButton.style.display = 'none';
@@ -76,26 +77,34 @@ const quizData = [
 
 let currentQuestionIndex = 0;
 let score = 0;
+let selectedAnswer = null;
 
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
-const startQuizBtn = document.getElementById('start-quiz-btn');
 const resultElement = document.getElementById('result');
 
 loadQuestion();
 
 function loadQuestion() {
     const currentQuestion = quizData[currentQuestionIndex];
-    questionElement.innerText = currentQuestion;
+    questionElement.innerText = currentQuestion.question;
     optionsElement.innerHTML = '';
+    selectedAnswer = null;
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement('button');
         button.innerText = option;
-        button.onclick = () => selectAnswer(index);
+        button.className = 'option-btn';
+        button.onclick = () => selectAnswer(index, button);
         optionsElement.appendChild(button);
     });
+}
 
-};
+function selectAnswer(index, button) {
+    selectedAnswer = index;
+    const buttons = optionsElement.querySelectorAll('button');
+    buttons.forEach(b => b.classList.remove('selected'));
+    button.classList.add('selected');
+}
 
 function checkAnswer() {
     if (selectedAnswer === null) {
@@ -103,28 +112,23 @@ function checkAnswer() {
         return;
     }
 
-    const currentQuizData = quizData[currentQuestioon];
-    if (selectedAnswer === currentQuestion) {
-      }  score++;
+    const currentQuestion = quizData[currentQuestionIndex];
+    if (selectedAnswer === currentQuestion.correctAnswer) {
+        score++;
         resultElement.innerText = "Correct!";
-    }  else {
-        resultElement.innerText = `Doh! The correct answer was: ${currentQuestion.options[currentQuestion.correctAnswer]}`;
-    } 
-    currentQuestion++;
-    if (currentQuestionQuizData < quizData.length) {
-        loadQuestion();
+        console.log("Score updated: " + score);
     } else {
-        showFinalScore();
+        resultElement.innerText = `D'oh! The correct answer was: ${currentQuestion.options[currentQuestion.correctAnswer]}`;
     }
 
-    currentQuestionindex++;
+    currentQuestionIndex++;
     if (currentQuestionIndex < quizData.length) {
         loadQuestion();
     } else {
         resultElement.innerText = `Quiz Over! Your final score is ${score} out of ${quizData.length}.`;
         submitButton.disabled = true;
     }
-
+}
 
 submitButton.addEventListener('click', () => {
     checkAnswer();
