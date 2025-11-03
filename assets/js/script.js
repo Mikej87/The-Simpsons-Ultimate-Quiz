@@ -77,7 +77,6 @@ const quizData = [
 
 let currentQuestionIndex = 0;
 let score = 0;
-let selectedAnswer = null;
 
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
@@ -133,3 +132,11 @@ function checkAnswer() {
 submitButton.addEventListener('click', () => {
     checkAnswer();
 });
+
+function checkAnswer() {
+    if (selectedAnswer === null) {
+        console.log(selectedAnswer);
+        alert("Please select an answer before submitting.");
+        return;
+    }
+}
