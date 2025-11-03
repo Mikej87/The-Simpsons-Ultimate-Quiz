@@ -74,6 +74,17 @@ const quizData = [
     }
 ];
 
+const startbtn = document.getElementById('start-quiz-btn');
+const quizContainer = document.querySelector('.quiz-container');
+
+startbtn.addEventListener('click', () => {
+    quizContainer.style.display = 'block';
+    startbtn.style.display = 'none';
+    loadQuestion();
+}S
+document.addEventListener()
+
+
 const optionsContainer = document.getElementById('options');
 const options = ['option1', 'option2', 'option3', 'option4'];
 optionsContainer.innerHTML = '';
