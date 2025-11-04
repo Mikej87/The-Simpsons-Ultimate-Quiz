@@ -103,3 +103,11 @@ function checkAnswer(selectedAnswer) {
 function endQuiz() {
     resultElement.innerHTML = "<h3>Well done, you scored:</h3> " + score;
 }
+
+const resetButton = document.getElementById('reset-btn');
+resetButton.addEventListener('click', resetQuiz);
+
+function resetQuiz() {
+    // Rest quiz state //
+    console.log("Quiz reset");
+}
