@@ -1,23 +1,19 @@
 console.log("Quiz script loaded");
-
-const startQuizBtn = document.getElementById('start-quiz-btn');
+const startQuizBtn = document.getElementById('start-btn');
 const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
-console.log(startQuizBtn);
-startBtn.addEventListener('click', () => {
-    quizData();
-    startQuizBtn.style.display = 'none';
-});
-
-startBtn.addEventListener('click', () => {
-    console.log('Button clicked ');
-    quizContainer.style.display = 'block';
-    startQuizBtn.style.display = 'none';
-    loadQuestion();
-});
-
+const questionElement = document.getElementById('question');
+const optionsElement0 = document.getElementById('option0');
+const optionsElement1 = document.getElementById('option1');
+const optionsElement2 = document.getElementById('option2');
+const optionsElement3 = document.getElementById('option3');
+const resultElement = document.getElementById('result');
+const scoreAmount = document.getElementById('actualScore');
+let score = 0;
+let currentQuestion = 0;
+quizContainer.style.visibility = "hidden";
 const quizData = [
-    {
+    {       // questions //
         question: "What is the name of the bartender in Moe's Tavern?",
         options: ["Barney", "Moe", "Lenny", "Mohammed"],
         correctAnswer: 1
@@ -73,95 +69,37 @@ const quizData = [
         correctAnswer: 0
     }
 ];
-
-// Removed duplicate declaration and incorrect event listener for startQuizBtn
-// const startQuizBtn = document.getElementById('start-quiz-btn');
-// const quizcontainer = document.querySelector('.quiz-container');
-
-// startquizbtn.addEventListener('click', () => {
-//     quizContainer.style.display = 'block';
-//     startquizbtn.style.display = 'none';
-//     loadQuestion();
-// });
-
-
-
-const optionsContainer = document.getElementById('options');
-const options = ['option1', 'option2', 'option3', 'option4'];
-optionsContainer.innerHTML = '';
-options.forEach((option, index) => {
-    const optionsElement = document.createElement('btn');
-    optionsElement.textContent = options;
-    optionsElement.addEventListener('click', () => {
-        selectAnswer(index);
-    });
-    optionsContainer.appendChild(optionsElement);
-});
-
-
-
-let currentQuestionIndex = 0;
-let score = 0;
-
-const questionElement = document.getElementById('question');
-const optionsElement = document.getElementById('options');
-const resultElement = document.getElementById('result');
-
-loadQuestion();
-
-function loadQuestion() {
+function quizmaster() {
+    quizContainer.style.visibility = "visible";
+    if (currentQuestion < quizData.length) {
+        loadQuestion(currentQuestion)
+    } else {
+        // we must be at the end of the quiz!
+        endQuiz();
+    }
+}
+/**
+ * This function loads the question and answer
+ * options. 
+ * @param {int} currentQuestionIndex 
+ */
+function loadQuestion(currentQuestionIndex) {
     const currentQuestion = quizData[currentQuestionIndex];
     questionElement.innerText = currentQuestion.question;
-    optionsElement.innerHTML = '';
-    selectedAnswer = null;
-    currentQuestion.options.forEach((option, index) => {
-        const button = document.createElement('button');
-        button.innerText = option;
-        button.className = 'option-btn';
-        button.onclick = () => selectAnswer(index, button);
-        optionsElement.appendChild(button);
-    });
+    optionsElement0.innerText = currentQuestion.options[0];
+    optionsElement1.innerText = currentQuestion.options[1];
+    optionsElement2.innerText = currentQuestion.options[2];
+    optionsElement3.innerText = currentQuestion.options[3];
 }
-
-function selectAnswer(index, button) {
-    selectedAnswer = index;
-    const buttons = optionsElement.querySelectorAll('button');
-    buttons.forEach(b => b.classList.remove('selected'));
-    button.classList.add('selected');
+function checkAnswer(selectedAnswer) {
+    // if selectedAnswer is answer
+    if (selectedAnswer == quizData[currentQuestion].correctAnswer) {
+        score ++;
+        scoreAmount.innerText = score;
+    } 
+    currentQuestion ++;
+    quizmaster();
 }
-
-function checkAnswer() {
-    if (selectedAnswer === null) {
-        alert("Please select an answer before submitting.");
-        return;
-    }
-
-    const currentQuestion = quizData[currentQuestionIndex];
-    if (selectedAnswer === currentQuestion.correctAnswer) {
-        score++;
-        resultElement.innerText = "Correct!";
-        console.log("Score updated: " + score);
-    } else {
-        resultElement.innerText = `D'oh! The correct answer was: ${currentQuestion.options[currentQuestion.correctAnswer]}`;
-    }
-
-    currentQuestionIndex++;
-    if (currentQuestionIndex < quizData.length) {
-        loadQuestion();
-    } else {
-        resultElement.innerText = `Quiz Over! Your final score is ${score} out of ${quizData.length}.`;
-        startQuizBtn.disabled = true;
-    }
-}
-
-startQuizBtn.addEventListener('click', () => {
-    checkAnswer();
-});
-
-function checkAnswer() {
-    if (selectedAnswer === null) {
-        console.log(selectedAnswer);
-        alert("Please select an answer before submitting.");
-        return;
-    }
+function endQuiz() {
+    resultElement.innerHTML = "<h3>Well done, you scored:</h3> " + score;
 }

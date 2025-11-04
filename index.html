@@ -9,16 +9,37 @@
 <body>
     <div class="container">
         <h1>The Simpsons Ultimate Quiz</h1>
-        <div class="logo"></div>
-
-        <div class ="quiz-container"></div>">   
-        <div id="question">
-        <div id="options">
-        </div>    
+        <section class="logo"></section>
+        <div id="quiz-container">   
+            <div id="question"></div>
+            <div id="options">
+                <button id="option0" onclick="checkAnswer(0)"></button>
+                <button id="option1" onclick="checkAnswer(1)"></button>
+                <button id="option2" onclick="checkAnswer(2)"></button>
+                <button id="option3" onclick="checkAnswer(3)"></button>
+            </div>
+            <div id="scored">Score: <span id="actualScore">0</span></div>
+            
+            <div id="result"></div>
         </div>
-        <button id="start-btn">Start Quiz</button> 
-        <div id="result"></div>
+        <button id="start-btn" onclick="quizmaster()">Start Quiz</button> 
     </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
+Collapse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
