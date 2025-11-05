@@ -1,5 +1,5 @@
 ![The Simpsons logo]
-(./images/TheSimpsonslogo.png)
+(./assets/css/images/TheSimpsonslogo.png)
 
 # The-Simpsons-Ultimate-Quiz
 
