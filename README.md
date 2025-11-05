@@ -1,3 +1,6 @@
+[![The Simpsons logo]
+(./TheSimpsonslogo.png)
+
 # The-Simpsons-Ultimate-Quiz
 
 The Simpsons Ultimate Quiz delivers an entertaining and fun experience for users interested in exploring the fascinating world of The Simpsons. With its engaging content, user-friendly interface and interactive features. The quiz serves as an enjoyable platform for Simpsons enthusiasts to test their knowledge and learn new facts.
