@@ -9,6 +9,7 @@ const optionsElement2 = document.getElementById('option2');
 const optionsElement3 = document.getElementById('option3');
 const resultElement = document.getElementById('result');
 const scoreAmount = document.getElementById('actualScore');
+
 let score = 0;
 let currentQuestion = 0;
 quizContainer.style.visibility = "hidden";
@@ -103,11 +104,19 @@ function checkAnswer(selectedAnswer) {
 function endQuiz() {
     resultElement.innerHTML = "<h3>Well done, you scored:</h3> " + score;
 }
-
-const resetButton = document.getElementById('reset-btn');
-resetButton.addEventListener('click', resetQuiz);
-
+const resetBtn = document.getElementById('reset-btn');
+resetBtn.addEventListener('click', resetQuiz);
 function resetQuiz() {
-    // Rest quiz state //
-    console.log("Quiz reset");
+    score = 0;
+    currentQuestion = 0;
+    scoreAmount.innerText = score;
+    resultElement.innerHTML = "";
+    quizmaster();
 }
+startQuizBtn.addEventListener('click', quizmaster);
+submitButton.addEventListener('click', function() {
+    const selectedOption = document.querySelector('input[name="option"]:checked');
+    if (selectedOption) {
+        checkAnswer(selectedOption.value);
+    }
+});

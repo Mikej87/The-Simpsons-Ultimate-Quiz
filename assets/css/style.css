@@ -87,6 +87,13 @@ h1 {
 #result {
     font-size: 1.2em;
     margin-top: 20px;
+    text-align: center;
+}
+
+#score {
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center; 
 }
 
 #start-btn {
@@ -119,10 +126,51 @@ h1 {
     border: none;
     background-color: #bbb814;
     color: white;
+    margin-left: 700px;
 }
 
 footer {
     text-align: center;
     font-size: 40px;
     color: #bbb814;
+}
+
+@media  {
+    .logo {
+        
+    background-image: url('../images/simpsons-12681.png');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    }       
+    
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+        height: auto;
+        padding: 10px;
+    }
+
+    #options {
+        font-size: 18px;
+    }
+
+    .option {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #submit-btn, #reset-btn {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+
+    #reset-btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
