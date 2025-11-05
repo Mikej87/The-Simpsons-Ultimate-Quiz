@@ -135,19 +135,6 @@ footer {
     color: #bbb814;
 }
 
-@media  {
-    .logo {
-        
-    background-image: url('../images/simpsons-12681.png');
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    display: block;
-    margin: 20px auto;
-    max-width: 400px;
-    }       
-    
-}
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5rem;
@@ -170,7 +157,7 @@ footer {
     }
 
     #reset-btn {
-        margin-left: 0;
+        margin-left: 40%;
         margin-top: 20px;
     }
 }

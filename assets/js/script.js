@@ -117,6 +117,6 @@ startQuizBtn.addEventListener('click', quizmaster);
 submitButton.addEventListener('click', function() {
     const selectedOption = document.querySelector('input[name="option"]:checked');
     if (selectedOption) {
-        checkAnswer(selectedOption.value);
+        checkAnswer(Number(selectedOption.value));
     }
 });
