@@ -16,11 +16,32 @@ body {
     background-image: url(../images/simpsons-12705.png);
 }
 
+.form-select {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.button-btn-primary {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #bbb814;
+    color: white;
+    cursor: pointer;
+}   
+
 .instructions body {
     background-color: rgb(135, 206, 235);
-    font-size: 50px;
+    font-size: 100px;
     text-align: center;
     background-image: url(../images/bart.png);
+    height: 300px;
+    font-weight: bold;
 }
 
 .navbar {
