@@ -1,12 +1,42 @@
 
 
 body {
-    background-color: skyblue;
+    background-color: rgb(135, 206, 235);
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: Akbar;
+}
+
+.feedback body {
+    background-color: rgb(135, 206, 235);
+    font-size: 50px;
+    text-align: center;
+    background-image: url(../images/simpsons-12705.png);
+}
+
+.instructions body {
+    background-color: rgb(135, 206, 235);
+    font-size: 50px;
+    text-align: center;
+    background-image: url(../images/bart.png);
+}
+
+.navbar {
+    background-color: #bbb814;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .logo {
@@ -32,7 +62,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     height: 200px;
-    padding-top: 20%;
+    padding-top: 10%;
     
 }
 
@@ -75,13 +105,13 @@ h1 {
     font-size: 1em;
     cursor: pointer;
     border: none;
-    background-color: #4CAF50;
+    background-color: #bbb814;
     color: white;
    
 }
 
 #submit-btn:hover {
-    background-color: #45a049;
+    background-color: #bbb814;
 }
 
 #result {
