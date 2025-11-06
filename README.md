@@ -82,20 +82,11 @@ When clicked on instructions, a window opens with a close button on the bottom. 
 
 Instructions View
 
-Feedback
-Users have an option to submit feedback and any other queries they may have. All fields are required and verified by the code. It asks the user for name, email address and a message.
+### Feedback
+Users have an option to submit feedback by choosing a button. All fields are required and verified by the code.
 
-Feedback Form
-
-Feedback Confirmation
-Provides the user with acknowledgement. Page reloads after 5 seconds and returns to the start screen. There is also an option to click on home icon to return to homepage.
-
-Feedback Confirmation Page
-
-Back to top
-
-Landing View
-The quiz is built on one page to get the best performance. The first page consists of quiz name, welcome message, username field, difficulty levels and start button. All buttons have hover effect and level buttons have active color as well. Username and Difficulty Levels are required fields in order to proceed to the next part of the quiz. Once they are selected, questions are from APIfetched based on the difficulty level. This feature accommodates users with varying levels of knowledge and expertise in animation. For consistency purposes, home screen is the same across all devices.
+### Landing View
+The quiz is built on one page to get the best performance. The first page consists of quiz name, welcome message and start button. All buttons have hover effect and level buttons have active color as well. Once they are playing, questions are from APIfetched based. This feature accommodates users with varying levels of knowledge and expertise in animation. For consistency purposes, home screen is the same across all devices.
 
 Landing View Large Screen
 
@@ -103,9 +94,7 @@ Small Screen Devices
 
 Landing View Small Screen
 
-Back to top
-
-Question View
+### Question View
 Questions are multiple choice and displayed one by one. The question body and 4 possible answers is displayed. Above the questions, users can see countdown timer and question number. The timer is set to 20 seconds, if the question is not answered to moves to the next one and the timer starts again. When the answer is selected, correct answer is displayed in green and wrong one in red.
 
 Users can also monitor their progress. Above the question, a question number is displayed. Also, after each question a dot appears with the corresponding color whether the answer was wrong or right. If the answer timed out, the dot will be grey. It is a visual representation of the players progress.
@@ -114,16 +103,12 @@ Under the question choices, users can also see the level selected and the number
 
 Question View
 
-Back to top
-
-Final Score View
+### Final Score View
 Final score view displays a message depending on the right score with the username. Also, a Play Again and Player Scores buttons are displayed. Play Again buttons resets the game bring user to the landing view.
 
 Final Score View
 
-Back to top
-
-Player Scores
+### Player Scores
 Local storage feature has been introduced to store top 5 the most recent player scores. When the toggle is clicked, the scores are displayed. It closes by clicking minus sign. This feedback helps users track their progress and encourages them to continue participating to improve their scores. There is hover effect on the toggle for UX.
 
 Player Scores View
@@ -173,145 +158,20 @@ My website is responsive to different layouts depending on the size of the viewp
 
 
 
-
-
-
-
-
-
-
-
-
-Features
-Layout is easy to use and adheres to the best practices in formatting and styling. Players can easily navigate between questions and access additional features such as high scores and contact information. With a countdown timer, multiple-choice questions and real-time feedback on right and wrong responses, the quiz offers users an engaging experience. This interactive feature increases user engagement and motivates users to take knowledge tests.
-
-Existing Features
-Header
-This webpage has a header consistent across all screen sizes. It contains Instructions and Feedback sections on the right. They both can be open at the same time. The close buttons and send buttons are the same styles as all the other buttons on the page. The headings are blue color so they blend in well and do not distract the quiz players.
-
-Header large screen
-
-Header Open
-
-Instructions
-When clicked on instructions, a window opens with a close button on the bottom. This functionality is the same across all devices. Instructions are written in plain English and displayed in a list style view.
-
-Instructions View
-
-Feedback
-Users have an option to submit feedback and any other queries they may have. All fields are required and verified by the code. It asks the user for name, email address and a message.
-
-Feedback Form
-
-Feedback Confirmation
-Provides the user with acknowledgement. Page reloads after 5 seconds and returns to the start screen. There is also an option to click on home icon to return to homepage.
-
-Feedback Confirmation Page
-
-Back to top
-
-Landing View
-The quiz is built on one page to get the best performance. The first page consists of quiz name, welcome message, username field, difficulty levels and start button. All buttons have hover effect and level buttons have active color as well. Username and Difficulty Levels are required fields in order to proceed to the next part of the quiz. Once they are selected, questions are from APIfetched based on the difficulty level. This feature accommodates users with varying levels of knowledge and expertise in animation. For consistency purposes, home screen is the same across all devices.
-
-Landing View Large Screen
-
-Small Screen Devices
-
-Landing View Small Screen
-
-Back to top
-
-Question View
-Questions are multiple choice and displayed one by one. The question body and 4 possible answers is displayed. Above the questions, users can see countdown timer and question number. The timer is set to 20 seconds, if the question is not answered to moves to the next one and the timer starts again. When the answer is selected, correct answer is displayed in green and wrong one in red.
-
-Users can also monitor their progress. Above the question, a question number is displayed. Also, after each question a dot appears with the corresponding color whether the answer was wrong or right. If the answer timed out, the dot will be grey. It is a visual representation of the players progress.
-
-Under the question choices, users can also see the level selected and the number of right and wrong answers as well.
-
-Question View
-
-Back to top
-
-Final Score View
-Final score view displays a message depending on the right score with the username. Also, a Play Again and Player Scores buttons are displayed. Play Again buttons resets the game bring user to the landing view.
-
-Final Score View
-
-Back to top
-
-Player Scores
-Local storage feature has been introduced to store top 5 the most recent player scores. When the toggle is clicked, the scores are displayed. It closes by clicking minus sign. This feedback helps users track their progress and encourages them to continue participating to improve their scores. There is hover effect on the toggle for UX.
-
-Player Scores View
-
-Footer
-To continue with cool toned theme, footer is very simple with two icons at the bottom. They both link to the site owners GitHub and LinkedIn pages and open in the separate tab. Footer icons also have hover effect.
-
-Footer All Screen Sizes
-
-Back to top
-
-404 Page
-In a scenario where the link may be broken, 404 page has a built in 5 second auto refresh function which returns to homepage. It also contains home icon chich brings back to the homepage.
-
-404 Page Screenshot
-
-Back to top
-
-Loader
-Loader was also added to remove an empty display of question box while content is being loaded from Open Trivia db. In an unlikely scenario, where database website is not active, loader will be dsplayed and fetch error will appear if the questions fail to retrieve from DB.
-
-Loader
-
-Future Enhancements
-Multiple player option.
-Online scoreboard that includes all players.
-Share results on Social Media.
-Option to store the progress and return to the quiz at a later time, allowing to finish it at user's pace and not lose any of the questions already completed.
-Broaden range of animation topics such as principles of animation, software tools, and industry best practices.
-Provide hints or additional resources for challenging questions.
-Time-adjustable quiz where player can select a time limit for each question, all questions or have no limitless time to complete.
-Back to top
-
-Technologies Used
-Languages
-HTML
-CSS
-JS
-Libraries & Framework
-Google Fonts
-Favicon
-Tools
-GitHub
-GitPod
-Balsamiq
-W3C HTML Validation Service
-W3C CSS Validation Service
-JSHint
-TOC Generator
-Am I Responsive
-Responsive Design Checker
-WAVE Accessibility Tool
-Image Resize
-Color Contrast Accessibility Validator
-Open Trivia DB
-cdnjs
-Back to top
-
-Testing
+### Testing
 Bugs
 The quiz was thoroughly tested. I have recorded the manual testing in other parts of this document. I have used console logs to ensure JavaScript is running as expected in the background. 3 major bugs were identified and rectified. 2 bugs are still unresolved and require further investigation:
 
-Bug	Status	Description	Steps To Resolve
+### Bug	Status	Description	Steps To Resolve
 Player Scores array not updating	Fixed	New player scores not adding to the player score array. The same 5 scores displaying all the time.	Wrong method used. Score was being added to the ed of Array which is fixed size. Updated JS code to add score to the beginning of Array and sort the scores accordingly.
 Infinite Timer	Fixed	While testing using console logs, transpired that timer keeps running after the game is finished and until Play Again is clicked.	Moved startTimer function into get new question so when no questions are displayed the timer will not start.
 Progress Dots Missing	Fixed	The aim for the functionality is to display correct answers in green, wrong - red, timed out - grey. While testing noticed that it does not add a dot for timed out answer.	Added a function to updateProgressDot ('empty') when the time is up.
 Skip Question	Unresolved	There is a 2 second setTimeOut after question is answered and new question is displayed. However, if the question is answered with one second left on the timer, both timer functionality  and time out seem to run concurrently. This sometimes results in skipping a question in the quiz. The question is counted as unanswered.	This requires further testing of the JS and possibly redesign of startTimer function.
 Console Error - SEND button	Unresolved	When feedback form button SEND is clicked, console error appears in console. Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
     at HTMLDocument. It does not affect the functionality of the form as the acknowledgement page still displays.	There two forms being used in html file and button types are clashing. It needs additional JS event listeners to handle the SEND button. This was out of scope for this part of the project as the form is not being handled in the backend.
-Back to top
 
-Responsiveness Tests
+
+###Responsiveness Tests
 To test the responsiveness, I have launched the website very early on. I followed the mobile-first strategy and verified all of my modifications using the DevTools browsers for Google Chrome and Microsoft Edge. Deployed versions were tested using the external website Responsive Design Checker. The Am I Responsive website was another external source that was used to obtain a unified view of different device breakpoints.
 
 I have also used Google Chrome's Mobile Simulator extension to evaluate the responsiveness of even more specialized devices. Device samples were examined for navigation, element alignment, content layout, and functionality concerns at different breakpoints. I moved the hamburger icon from the left to the right to enhance user experience as a result of the testing.
@@ -345,23 +205,17 @@ W3C HTML Validator
 404 Page:
 W3C HTML Validator
 
-Back to top
-
 CSS
 CSS code for the webpage was validated on W3C CSS Validation Service. It has returned errors only relating to external cdnjs file which is used for font awesome icons. There were no errors relating CSS code for this website.
 
 W3C CSS Validator
-
-Back to top
 
 JavaScript
 JS code was validated on JSHint. No errors identified.
 
 JS Validation Image
 
-Back to top
-
-User Story Testing
+### User Story Testing
 User Story	Result	Pass	Screenshot
 As a user, I want my knowledge to be challenged.	Quiz fetches questions from API so they do not repeat frequently.	Yes	Question View
 As a user, I want to be able to test my knowledge at different levels.	User can choose from 3 levels.	Yes	Level View
@@ -374,27 +228,23 @@ As a user, I want to be able to easily contact content creators for feedback or 
 As a user, I want the content to be accessible for anyone with diverse needs.	Passed all accessibility tests	Yes	See Accessibility Testing section
 Back to top
 
-Feature Testing
+### Feature Testing
 This website was extensively tested for functionality using both Chrome and Edge developer tools.
 
 Every feature was manually tested using the test script and outcomes recorded.
 
 Feature Testing Results
 
-Back to top
-
-Accessibility Testing
+### Accessibility Testing
 I have used web accessibility evaluation tool WAVE Tool which helps to determine if web content is accessible to individuals with diverse needs. No issues were raised.
 
-WAVE
+### WAVE
 
 In addition to WAVE testing, I have tested my webpage for color contrast accessibility on Color Contrast Accessibility Validator.
 
 Color Contrast Accessibility Validator
 
-Back to top
-
-Lighthouse Testing
+### Lighthouse Testing
 The Ultimate Animation Quiz has been tested in the Chrome Dev Tools and Microsoft Edge Dev Tools using Lighthouse Testing tool which inspects and scores the website for the following criteria:
 
 Performance - how quickly a website loads and how quickly users can access it.
@@ -409,16 +259,12 @@ Tests for Desktop Lighthouse Edge: Lighthouse-Desktop-Edge-Index
 
 Tests for Mobile on Lighthouse Edge: Lighthouse-Mobile-Edge-Index
 
-Back to top
-
-Browser Testing
+### Browser Testing
 The Animation Quiz website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Additionally, I have registered with BrowserStack in order to test my page on both Safari and Internet Explorer. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified.
 
-Browser Compatibility Manual Test
+## Browser Compatibility Manual Test
 
-Back to top
-
-Deployment
+### Deployment
 To deploy the project
 The Ultimate Animation Quiz was deployed early in the process to GitHub pages via the following steps:
 
@@ -433,8 +279,6 @@ Click on the Save button.
 The website is now live at https://indre-v.github.io/animation-quiz/.
 
 Any changes required to the website, they can be made, committed and pushed to GitHub.
-
-Back to top
 
 To fork the project
 Forking the GitHub repository allows you to create a duplicate of a local repository. This is done so that modifications to the copy can be performed without compromising the original repository.
@@ -454,10 +298,10 @@ Type git clone, and then paste the URL you copied earlier.
 Press Enter to create your local clone.
 Back to top
 
-Credits
+### Credits
 Feedback, advice and support:
 
-Simen Daehlin
+Spencer bariball
 Quiz Questions
 
 Open Trivia DB
