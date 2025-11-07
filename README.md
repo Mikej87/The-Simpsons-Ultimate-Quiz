@@ -1,4 +1,4 @@
-![The Simpsons logo](TheSimpsonslogo.png)
+![The Simpsons logo](assets/images/TheSimpsonslogo.png)
 
 # The-Simpsons-Ultimate-Quiz
 
@@ -180,22 +180,13 @@ I have also used Google Chrome's Mobile Simulator extension to evaluate the resp
 
 Size	Device Example	Navigation	Element Alignments	Content Placement	Functionality	Notes
 sm	Samsung Galaxy S20	Good	Good	Good	Good	
-sm	iPhone 11 PRO	Good	Good	Good	Good	Updated font size of the start area
-sm	iPhone 13 PRO MAX	Good	Good	Good	Good	Updated header bottom margin to fit quiz container
-md	iPad MINI	Good	Good	Good	Good	
-md	Galaxy Tab S7	Good	Good	Good	Good	
-md	iPad Air	Good	Good	Good	Good	
-lg	iPad Pro	Good	Good	Good	Good	
-xl	Mackbook Air	Good	Good	Good	Good	
-xl	HP Stream Laptop	Good	Good	Good	Good	
-xxl	Dell Lattitude	Good	Good	Good	Good	Updated font weight for support headings
 xxl	Desktop	Good	Good	Good	Good	
 Back to top
 
 ### Code Validation
 HTML
 I have used W3C HTML Validation Service. I have tested 3 html files. They all came back without errors.
-<img width="1177" height="837" alt="image" src="https://github.com/user-attachments/assets/12849294-aefd-4dd6-9bab-b26020ffd819" />
+![image](assets/images/htmlvalidator.png)
 
 Main Quiz Page:
 W3C HTML Validator
