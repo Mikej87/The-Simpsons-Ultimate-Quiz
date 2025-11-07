@@ -1,4 +1,4 @@
-![The Simpsons logo](TheSimpsonslogo.png)
+![The Simpsons logo](assets/images/TheSimpsonslogo.png)
 
 # The-Simpsons-Ultimate-Quiz
 
@@ -171,33 +171,27 @@ Console Error - SEND button	Unresolved	When feedback form button SEND is clicked
     at HTMLDocument. It does not affect the functionality of the form as the acknowledgement page still displays.	There two forms being used in html file and button types are clashing. It needs additional JS event listeners to handle the SEND button. This was out of scope for this part of the project as the form is not being handled in the backend.
 
 
-###Responsiveness Tests
+### Responsiveness Tests
 To test the responsiveness, I have launched the website very early on. I followed the mobile-first strategy and verified all of my modifications using the DevTools browsers for Google Chrome and Microsoft Edge. Deployed versions were tested using the external website Responsive Design Checker. The Am I Responsive website was another external source that was used to obtain a unified view of different device breakpoints.
 
 I have also used Google Chrome's Mobile Simulator extension to evaluate the responsiveness of even more specialized devices. Device samples were examined for navigation, element alignment, content layout, and functionality concerns at different breakpoints. I moved the hamburger icon from the left to the right to enhance user experience as a result of the testing.
 
-Final Test Results:
+### Final Test Results:
 
 Size	Device Example	Navigation	Element Alignments	Content Placement	Functionality	Notes
 sm	Samsung Galaxy S20	Good	Good	Good	Good	
-sm	iPhone 11 PRO	Good	Good	Good	Good	Updated font size of the start area
-sm	iPhone 13 PRO MAX	Good	Good	Good	Good	Updated header bottom margin to fit quiz container
-md	iPad MINI	Good	Good	Good	Good	
-md	Galaxy Tab S7	Good	Good	Good	Good	
-md	iPad Air	Good	Good	Good	Good	
-lg	iPad Pro	Good	Good	Good	Good	
-xl	Mackbook Air	Good	Good	Good	Good	
-xl	HP Stream Laptop	Good	Good	Good	Good	
-xxl	Dell Lattitude	Good	Good	Good	Good	Updated font weight for support headings
 xxl	Desktop	Good	Good	Good	Good	
 Back to top
 
-Code Validation
+### Code Validation
 HTML
 I have used W3C HTML Validation Service. I have tested 3 html files. They all came back without errors.
+![image of html validator](assets/images/htmlvalidator.png)
 
 Main Quiz Page:
 W3C HTML Validator
+
+
 
 Feedback Acknowledgement:
 W3C HTML Validator
@@ -209,11 +203,13 @@ CSS
 CSS code for the webpage was validated on W3C CSS Validation Service. It has returned errors only relating to external cdnjs file which is used for font awesome icons. There were no errors relating CSS code for this website.
 
 W3C CSS Validator
+![image of css validator](assets/images/cssvalidator)
 
 JavaScript
 JS code was validated on JSHint. No errors identified.
 
 JS Validation Image
+![image of js validator](assets/images/jsvalidator)
 
 ### User Story Testing
 User Story	Result	Pass	Screenshot
