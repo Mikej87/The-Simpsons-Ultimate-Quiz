@@ -171,12 +171,12 @@ Console Error - SEND button	Unresolved	When feedback form button SEND is clicked
     at HTMLDocument. It does not affect the functionality of the form as the acknowledgement page still displays.	There two forms being used in html file and button types are clashing. It needs additional JS event listeners to handle the SEND button. This was out of scope for this part of the project as the form is not being handled in the backend.
 
 
-###Responsiveness Tests
+### Responsiveness Tests
 To test the responsiveness, I have launched the website very early on. I followed the mobile-first strategy and verified all of my modifications using the DevTools browsers for Google Chrome and Microsoft Edge. Deployed versions were tested using the external website Responsive Design Checker. The Am I Responsive website was another external source that was used to obtain a unified view of different device breakpoints.
 
 I have also used Google Chrome's Mobile Simulator extension to evaluate the responsiveness of even more specialized devices. Device samples were examined for navigation, element alignment, content layout, and functionality concerns at different breakpoints. I moved the hamburger icon from the left to the right to enhance user experience as a result of the testing.
 
-Final Test Results:
+### Final Test Results:
 
 Size	Device Example	Navigation	Element Alignments	Content Placement	Functionality	Notes
 sm	Samsung Galaxy S20	Good	Good	Good	Good	
@@ -192,12 +192,15 @@ xxl	Dell Lattitude	Good	Good	Good	Good	Updated font weight for support headings
 xxl	Desktop	Good	Good	Good	Good	
 Back to top
 
-Code Validation
+### Code Validation
 HTML
 I have used W3C HTML Validation Service. I have tested 3 html files. They all came back without errors.
+<img width="1177" height="837" alt="image" src="https://github.com/user-attachments/assets/12849294-aefd-4dd6-9bab-b26020ffd819" />
 
 Main Quiz Page:
 W3C HTML Validator
+<img width="1177" height="837" alt="image" src="https://github.com/user-attachments/assets/bdeefda1-79ba-44bd-8ae9-d530d878ea40" />
+
 
 Feedback Acknowledgement:
 W3C HTML Validator
