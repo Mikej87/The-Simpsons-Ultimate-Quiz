@@ -186,11 +186,11 @@ Back to top
 ### Code Validation
 HTML
 I have used W3C HTML Validation Service. I have tested 3 html files. They all came back without errors.
-![image](assets/images/htmlvalidator.png)
+![image of html validator](assets/images/htmlvalidator.png)
 
 Main Quiz Page:
 W3C HTML Validator
-<img width="1177" height="837" alt="image" src="https://github.com/user-attachments/assets/bdeefda1-79ba-44bd-8ae9-d530d878ea40" />
+
 
 
 Feedback Acknowledgement:
@@ -203,11 +203,13 @@ CSS
 CSS code for the webpage was validated on W3C CSS Validation Service. It has returned errors only relating to external cdnjs file which is used for font awesome icons. There were no errors relating CSS code for this website.
 
 W3C CSS Validator
+![image of css validator](assets/images/cssvalidator)
 
 JavaScript
 JS code was validated on JSHint. No errors identified.
 
 JS Validation Image
+![image of js validator](assets/images/jsvalidator)
 
 ### User Story Testing
 User Story	Result	Pass	Screenshot
