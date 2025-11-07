@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(135, 206, 235);
+    background-color: rgb(26, 112, 145);
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,10 +10,14 @@ body {
 }
 
 .feedback body {
-    background-color: rgb(135, 206, 235);
+    background-color: rgb(26, 134, 177);
     font-size: 50px;
     text-align: center;
     background-image: url(../images/simpsons-12705.png);
+    height: 400px;
+    font-weight: bold;
+    width: 100%;
+
 }
 
 .form-select {
@@ -36,12 +40,22 @@ body {
 }   
 
 .instructions body {
-    background-color: rgb(135, 206, 235);
-    font-size: 100px;
+    background-color: rgb(25, 142, 188);
+    font-size: 30px;
     text-align: center;
     background-image: url(../images/bart.png);
     height: 300px;
     font-weight: bold;
+}
+
+.instructions, h2 {
+    font-size: 50px;        
+    margin: 20px;
+}
+
+.instructions, p {
+    font-size: 30px;        
+    margin: 20px;   
 }
 
 .navbar {
@@ -208,7 +222,11 @@ footer {
     }
 
     #reset-btn {
-        margin-left: 40%;
+        margin-left: 20%;
         margin-top: 20px;
     }
+
+    .quiz-container {
+        width: 90%;
+    }   
 }
