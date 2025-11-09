@@ -10,6 +10,8 @@ const optionsElement3 = document.getElementById('option3');
 const resultElement = document.getElementById('result');
 const scoreAmount = document.getElementById('actualScore');
 
+
+
 let score = 0;
 let currentQuestion = 0;
 quizContainer.style.visibility = "hidden";
@@ -119,4 +121,11 @@ submitButton.addEventListener('click', function() {
     if (selectedOption) {
         checkAnswer(Number(selectedOption.value));
     }
+
+    
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    document.getElementById("message").innerHTML = "Oakily dokily, thank you come again!";
 });
+});
+

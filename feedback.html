@@ -6,6 +6,7 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<!---------------------------------- Navbar ---------------------------------->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html"></a>
@@ -26,7 +27,9 @@
     </div>
   </div>
 </nav>
+<!---------------------------------- End Navbar ---------------------------------->
 <body>
+    <h1>Feedback</h1>
     <div id="feedback"><select class="form-select" aria-label="Default select example">
   <option selected>Did you enjoy the quiz?</option>
   <option value="1">Yes</option>
@@ -34,9 +37,9 @@
   <option value="3">Could of been better</option>
 </select>
 <form>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <div id="Oakily doakily,Thankyou!"></div>
-    <img src="assets/images/bart.png" alt="Thumbs Up" width="200" height="200">
+    <button type="submit" class="btn btn-primary" onclick="return showMessage()">Submit</button>
+    <div id="message"></div>
+
 </form>
 </div>
     

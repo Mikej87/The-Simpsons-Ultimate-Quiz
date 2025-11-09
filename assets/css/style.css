@@ -10,7 +10,7 @@ body {
 }
 
 .feedback body {
-    background-color: rgb(26, 134, 177);
+    background-color: rgb(26, 112, 145);
     font-size: 50px;
     text-align: center;
     background-image: url(../images/simpsons-12705.png);
@@ -19,6 +19,17 @@ body {
     width: 100%;
 
 }
+
+feedback, button {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #bbb814;
+    color: black;
+    cursor: pointer;
+}   
 
 .form-select {
     font-size: 30px;
@@ -35,13 +46,17 @@ body {
     border-radius: 5px;
     border: none;
     background-color: #bbb814;
-    color: white;
+    color: black;
     cursor: pointer;
 }   
 
+.ultimateh1 {
+    background-color: rgba(0, 0, 0, 1.5);
+}
+
 .instructions body {
-    background-color: rgb(25, 142, 188);
-    font-size: 30px;
+    background-color: rgb(26, 112, 145);
+    font-size: 100px;
     text-align: center;
     background-image: url(../images/bart.png);
     height: 300px;
@@ -49,13 +64,24 @@ body {
 }
 
 .instructions, h2 {
-    font-size: 50px;        
+    font-size: 100px;        
     margin: 20px;
+    font-weight: bold;
+    font-family: Akbar;
 }
 
 .instructions, p {
-    font-size: 30px;        
-    margin: 20px;   
+    font-size: 50px;        
+    margin: 20px; 
+    font-weight: bold;  
+    font-family: Akbar;
+}
+
+.instructions, ol, li {
+    font-size: 24px;        
+    margin: 20px; 
+    font-weight: bold;  
+    font-family: Akbar;
 }
 
 .navbar {
@@ -88,7 +114,9 @@ nav ul li {
 h1 {
     text-align: center;
     font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: Akbar;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: rgba(0, 0, 0, 0.5) 5px solid;
     color: #bbb814;
     text-shadow: 2px 2px #000000;
     background-image: url('../images/cloud.jpg');
@@ -141,7 +169,7 @@ h1 {
     cursor: pointer;
     border: none;
     background-color: #bbb814;
-    color: white;
+    color:rgba(26, 112, 145);
    
 }
 
@@ -190,14 +218,42 @@ h1 {
     cursor: pointer;
     border: none;
     background-color: #bbb814;
-    color: white;
+    color: black;
     margin-left: 700px;
+    font-weight: bold;
+}
+
+#message {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #bbb814;
+    text-shadow: 2px 2px #000;
+}   
+
+.btn btn-primary {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #bbb814;
+    color: black;
+    cursor: pointer;
 }
 
 footer {
     text-align: center;
     font-size: 40px;
     color: #bbb814;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 360px) {
+    reset-btn {
+        margin-left: 60%;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 600px) {
