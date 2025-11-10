@@ -46,11 +46,7 @@ Online communities and fan groups
 ### Wireframes
 Wireframes were designed using Balsamiq tool. Following best practices, mobile version was designed first, then tablet and lastly the laptop view. There are some deviations from wireframes in the live version of the quiz. It is one page website to enhance the logical flow. I have added level user selected in the question view, a number of correct and wrong answers as well. A functionality of local storage to display top 5 results is included in the final version as well.
 
-Mobile Wireframes
-
-Tablet Wireframes
-
-Desktop Wireframes
+![balsamiq image](assets/images/balsamiq.png)
 
 ### Design Choices
 Typography
@@ -72,33 +68,23 @@ Layout is easy to use and adheres to the best practices in formatting and stylin
 Header
 This webpage has a header consistent across all screen sizes. It contains Instructions and Feedback sections on the right. They both can be open at the same time. The close buttons and send buttons are the same styles as all the other buttons on the page. The headings are blue color so they blend in well and do not distract the quiz players.
 
-Header large screen
-
-Header Open
-
-Instructions
+### Instructions
 When clicked on instructions, it takes you to a new window. This functionality is the same across all devices. Instructions are written in plain English and displayed in a list style view.
 
 Instructions View
+![instructions](assets/images/instructions.png)
 
 ### Feedback
 Users have an option to submit feedback by choosing a button. All fields are required and verified by the code.
 
 ### Landing View
-The quiz is built on one page to get the best performance. The first page consists of quiz name, welcome message and start button. All buttons have hover effect and level buttons have active color as well. Once they are playing, questions are from APIfetched based. This feature accommodates users with varying levels of knowledge and expertise in the simpsons. For consistency purposes, home screen is the same across all devices.
+The quiz is built on one page to get the best performance. The first page consists of quiz name, welcome message and start button. All buttons have the same color. Once they are playing, questions are from APIfetched based. This feature accommodates users with varying levels of knowledge and expertise in the simpsons. For consistency purposes, home screen is the same across all devices.
 
-Landing View Large Screen
-
-Small Screen Devices
-
-Landing View Small Screen
 
 ### Question View
-Questions are multiple choice and displayed one by one. The question body and 4 possible answers is displayed. Above the questions when the answer is selected, correct answer is displayed on a number count.
+Questions are multiple choice and displayed one by one. The question body and 4 possible answers is displayed.
 
-Users can also monitor their progress. Above the question, a question number is displayed. 
-
-Under the question choices, users can also see the level selected and the number of right and wrong answers as well.
+Under the question choices, users can also see the level selected and the number of answers as well.
 
 ### Final Score View
 Final score view displays a message and a final score.
