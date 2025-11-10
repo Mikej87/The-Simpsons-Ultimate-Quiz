@@ -69,6 +69,7 @@ My website is responsive to different layouts depending on the size of the viewp
 | L           | (Large)       | >992px   |
 ------------------------------------------
 | XL          | (Extra Large) | >1200px  |
+------------------------------------------
 
 
 ### Features
@@ -147,6 +148,7 @@ My website is responsive to different layouts depending on the size of the viewp
 | L           | (Large)       | >992px   |
 ------------------------------------------
 | XL          | (Extra Large) | >1200px  |
+------------------------------------------
 
 
 
