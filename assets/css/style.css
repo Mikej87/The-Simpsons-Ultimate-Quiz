@@ -263,6 +263,11 @@ footer {
     color: #bbb814;
     background-color: rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 360px) {
+    reset-btn {
+        height: auto;
+    }
+}
 
 @media (max-width: 600px) {
     h1 {
