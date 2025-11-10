@@ -9,7 +9,7 @@ const optionsElement2 = document.getElementById('option2');
 const optionsElement3 = document.getElementById('option3');
 const resultElement = document.getElementById('result');
 const scoreAmount = document.getElementById('actualScore');
-
+const myForm = document.getElementById('myForm');
 
 
 let score = 0;
