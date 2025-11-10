@@ -259,7 +259,7 @@ In the None dropdown and choose Main.
 
 Click on the Save button.
 
-The website is now live at https://indre-v.github.io/the-simpsons-ultimate-quiz/.git/
+The website is now live at https://indre-v.github.io/the-simpsons-ultimate-quiz.git
 
 Any changes required to the website, they can be made, committed and pushed to GitHub.
 
