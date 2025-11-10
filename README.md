@@ -4,7 +4,7 @@
 
 The Simpsons Ultimate Quiz delivers an entertaining and fun experience for users interested in exploring the fascinating world of The Simpsons. With its engaging content, user-friendly interface and interactive features. The quiz serves as an enjoyable platform for Simpsons enthusiasts to test their knowledge and learn new facts.
 
-Playerds recieve a score at the end with a message.
+Players recieve a score at the end with a message.
 
 Players have the option to take quiz again.
 
@@ -224,8 +224,11 @@ I have used web accessibility evaluation tool WAVE Tool which helps to determine
 ### WAVE
 
 In addition to WAVE testing, I have tested my webpage for color contrast accessibility on Color Contrast Accessibility Validator.
+![image of wave](assets/images/wave1.png)
+![image of wave](assets/images/wave2.png)
+![image of wave](assets/images/wave3.png)
 
-Color Contrast Accessibility Validator
+
 
 ### Lighthouse Testing
 The Ultimate Animation Quiz has been tested in the Chrome Dev Tools and Microsoft Edge Dev Tools using Lighthouse Testing tool which inspects and scores the website for the following criteria:
@@ -241,6 +244,10 @@ Tests for Mobile on Lighthouse Chrome: Lighthouse-Mobile-Chrome-Index
 Tests for Desktop Lighthouse Edge: Lighthouse-Desktop-Edge-Index
 
 Tests for Mobile on Lighthouse Edge: Lighthouse-Mobile-Edge-Index
+
+![lighthouse test](assets/images/lighthouse1.png)
+![lighthouse test](assets/images/lighthouse2.png)
+![lighthouse test](assets/images/lighthouse3.png)
 
 ### Browser Testing
 The Animation Quiz website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Additionally, I have registered with BrowserStack in order to test my page on both Safari and Internet Explorer. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified.
