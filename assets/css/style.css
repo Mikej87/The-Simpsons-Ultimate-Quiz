@@ -236,6 +236,7 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+
 #message {
     font-size: 30px;
     margin-top: 20px;
@@ -266,6 +267,7 @@ footer {
 @media screen and (max-width: 360px) {
     reset-btn {
         height: auto;
+        position: relative;
     }
 }
 

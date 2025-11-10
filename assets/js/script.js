@@ -1,4 +1,3 @@
-console.log("Quiz script loaded");
 const startQuizBtn = document.getElementById('start-btn');
 const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-btn');
@@ -9,12 +8,13 @@ const optionsElement2 = document.getElementById('option2');
 const optionsElement3 = document.getElementById('option3');
 const resultElement = document.getElementById('result');
 const scoreAmount = document.getElementById('actualScore');
-const myForm = document.getElementById('myForm');
-
-
+const playAgain = document.getElementById('playAgain');
+const playAgain0 = document.getElementById('playAgain0');
+const playAgain1 = document.getElementById('playAgain1');
 let score = 0;
 let currentQuestion = 0;
 quizContainer.style.visibility = "hidden";
+playAgain.style.visibility = "hidden";
 const quizData = [
     {       // questions //
         question: "What is the name of the bartender in Moe's Tavern?",
@@ -105,6 +105,7 @@ function checkAnswer(selectedAnswer) {
 }
 function endQuiz() {
     resultElement.innerHTML = "<h3>Well done, you scored:</h3> " + score;
+    playAgain.style.visibility = "visible";
 }
 const resetBtn = document.getElementById('reset-btn');
 resetBtn.addEventListener('click', resetQuiz);
@@ -115,17 +116,12 @@ function resetQuiz() {
     resultElement.innerHTML = "";
     quizmaster();
 }
-startQuizBtn.addEventListener('click', quizmaster);
-submitButton.addEventListener('click', function() {
-    const selectedOption = document.querySelector('input[name="option"]:checked');
-    if (selectedOption) {
-        checkAnswer(Number(selectedOption.value));
+function playGameAgain(buttonClicked) {
+    if (buttonClicked == 0) {
+        window.location.reload();
     }
-
-    
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    document.getElementById("message").innerHTML = "Oakily dokily, thank you come again!";
-});
-});
-
+    if (buttonClicked == 1) {
+        window.location.replace("https://google.com");
+    }
+}
+startQuizBtn.addEventListener('click', quizmaster);

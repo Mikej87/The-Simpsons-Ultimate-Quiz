@@ -4,7 +4,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Simpsons Ultimate Quiz</title>
@@ -18,13 +17,6 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="feedback.html">Feedback</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="instructions" href="instructons.html">Instructions</a>
-        </li>
       </ul>
     </div>
   </div>
@@ -35,7 +27,26 @@
     <div class="container">
         <h1>The Simpsons Ultimate Quiz</h1>
         <section class="logo"></section>
-        <div id="quiz-container">   
+               
+        <div id="quiz-container"> 
+            <!-- Modal -->
+            <div class="modal fade" id="instModal" tabindex="-1" aria-labelledby="instModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Instructions</h1>
+                    
+                </div>
+                <div class="modal-body">
+                 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+                </div>
+                </div>
+            </div>
+            </div>  
             <div id="question"></div>
             <div id="options">
                 <button id="option0" onclick="checkAnswer(0)">1</button>
@@ -47,7 +58,11 @@
             
             <div id="result"></div>
         </div>
-        
+        <div id="playAgain">
+            <p>Did you enjoy the quiz?</p>
+            <button id="playAgain0" onclick="playGameAgain(0)">Yes</button>
+            <button id="playAgain1" onclick="playGameAgain(1)">No, take me to Google instead</button>
+        </div>
         <button id="start-btn" onclick="quizmaster()">Start Quiz</button>
         <button id="reset-btn" onclick=>Take Quiz Again</button> 
     </div>
@@ -56,11 +71,9 @@
     <footer>
         <h2>Created by Michael J. - 2025 &copy;</h2>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
 
 
 
