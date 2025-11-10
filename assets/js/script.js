@@ -14,7 +14,7 @@ const myForm = document.getElementById('myForm');
 
 let score = 0;
 let currentQuestion = 0;
-quizContainer.style.visibility = "hidden";
+quizContainer.style.visibility = "show";
 const quizData = [
     {       // questions //
         question: "What is the name of the bartender in Moe's Tavern?",
