@@ -259,7 +259,7 @@ In the None dropdown and choose Main.
 
 Click on the Save button.
 
-The website is now live at https://github.com/Mikej87/The-Simpsons-Ultimate-Quiz.git
+The website is now live at https://mikej87.github.io/The-Simpsons-Ultimate-Quiz/
 
 Any changes required to the website, they can be made, committed and pushed to GitHub.
 
