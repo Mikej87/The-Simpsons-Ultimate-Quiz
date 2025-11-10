@@ -58,7 +58,17 @@ Background image is displayed just underneath the start button. It displays the 
 ### Responsiveness
 My website is responsive to different layouts depending on the size of the viewport have been included in the CSS media queries. This allows visitors to experience the website as I intended on device types and screen sizes. The breakpoints I am using are from Bootstrap.
 
-Breakpoints
+| Breakpoints | Class infix | Dimensions |
+------------------------------------------
+| XS          | (Extra Small) | <576px   |
+------------------------------------------
+| S           | (Small)       | >576px   |
+------------------------------------------
+| M           | (Medium)      | >768px   |
+------------------------------------------
+| L           | (Large)       | >992px   |
+------------------------------------------
+| XL          | (Extra Large) | >1200px  |
 
 
 ### Features
@@ -127,10 +137,15 @@ Image was from Googlepics
 My website is responsive to different layouts depending on the size of the viewport have been included in the CSS media queries. This allows visitors to experience the website as I intended on device types and screen sizes. The breakpoints I am using are from Bootstrap.
 
 | Breakpoints | Class infix | Dimensions |
+------------------------------------------
 | XS          | (Extra Small) | <576px   |
+------------------------------------------
 | S           | (Small)       | >576px   |
+------------------------------------------
 | M           | (Medium)      | >768px   |
+------------------------------------------
 | L           | (Large)       | >992px   |
+------------------------------------------
 | XL          | (Extra Large) | >1200px  |
 
 
