@@ -44,8 +44,10 @@ Online communities and fan groups
 
 
 ### Wireframes
-Wireframes were designed using Balsamiq tool. Following best practices, mobile version was designed first, then tablet and lastly the laptop view. There are some deviations from wireframes in the live version of the quiz. It is one page website to enhance the logical flow. I have added level user selected in the question view, a number of correct and wrong answers as well. A functionality of local storage to display top 5 results is included in the final version as well.
+Wireframes were designed using Balsamiq tool. Following best practices, mobile version was designed first, then tablet and lastly the laptop view. There are some deviations from wireframes in the live version of the quiz. It is one page website to enhance the logical flow. 
 
+![balsamiq image](assets/images/mobilewireframe.png)
+![balsamiq image](assets/images/tabletwireframe.png)
 ![balsamiq image](assets/images/balsamiq.png)
 
 ### Design Choices
@@ -55,21 +57,17 @@ The font family chosen for The Simpsons Ultimate Quiz was Akbar. It is a sans-se
 ### Images
 Background image is displayed just underneath the start button. It displays the simpson family cartoon characters. The aim was for the background image to complement the subject matter of the quiz.
 
-### Responsiveness
+### Responsivenes
 My website is responsive to different layouts depending on the size of the viewport have been included in the CSS media queries. This allows visitors to experience the website as I intended on device types and screen sizes. The breakpoints I am using are from Bootstrap.
 
 | Breakpoints | Class infix | Dimensions |
-------------------------------------------
+|-------------|-------------|------------|
 | XS          | (Extra Small) | <576px   |
-------------------------------------------
 | S           | (Small)       | >576px   |
-------------------------------------------
 | M           | (Medium)      | >768px   |
-------------------------------------------
 | L           | (Large)       | >992px   |
-------------------------------------------
 | XL          | (Extra Large) | >1200px  |
-------------------------------------------
+
 
 
 ### Features
@@ -79,11 +77,13 @@ Layout is easy to use and adheres to the best practices in formatting and stylin
 Header
 This webpage has a header consistent across all screen sizes. The heading is yellow color so they blend in well and do not distract the quiz players.
 
+Header All Screen Sizes
+
 ### Feedback
 Users have an option to submit feedback by choosing a button. All fields are required and verified by the code.
 
 ### Landing View
-The quiz is built on one page to get the best performance. The first page consists of quiz name, welcome message and start button. All buttons have the same color. Once they are playing, questions are from APIfetched based. This feature accommodates users with varying levels of knowledge and expertise in the simpsons. For consistency purposes, home screen is the same across all devices.
+The quiz is built on one page to get the best performance. The page consists of quiz name, welcome message and start button. All buttons have the same color. Once they are playing, questions are from APIfetched based. This feature accommodates users with varying levels of knowledge and expertise in the simpsons. For consistency purposes, home screen is the same across all devices.
 
 
 ### Question View
@@ -100,7 +100,7 @@ To continue with simpson theme, footer is very simple with writing and a copyrig
 Footer All Screen Sizes
 
 ### 404 Page
-In a scenario where the link may be broken, 404 page has a built in 5 second auto refresh function which returns to homepage. It also contains home icon chich brings back to the homepage.
+In a scenario where the link may be broken, 404 page has a built in html link that brings you back to the homepage.
 
 ### Future Enhancements
 Multiple player option.
@@ -110,7 +110,6 @@ Option to store the progress and return to the quiz at a later time, allowing to
 Broaden range of simpson topics such as principles of animation, software tools, and industry best practices.
 Provide hints or additional resources for challenging questions.
 Time-adjustable quiz where player can select a time limit for each question, all questions or have no limitless time to complete.
-Back to top
 
 ### Technologies Used
 Languages
@@ -134,35 +133,12 @@ My colour scheme was in keeping with the Simpsons theme.
 ### Images
 Image was from Googlepics
 
-### Responsiveness
-My website is responsive to different layouts depending on the size of the viewport have been included in the CSS media queries. This allows visitors to experience the website as I intended on device types and screen sizes. The breakpoints I am using are from Bootstrap.
-
-| Breakpoints | Class infix | Dimensions |
-------------------------------------------
-| XS          | (Extra Small) | <576px   |
-------------------------------------------
-| S           | (Small)       | >576px   |
-------------------------------------------
-| M           | (Medium)      | >768px   |
-------------------------------------------
-| L           | (Large)       | >992px   |
-------------------------------------------
-| XL          | (Extra Large) | >1200px  |
-------------------------------------------
-
-
-
-
-
 ### Testing
 Bugs
-The quiz was thoroughly tested. I have recorded the manual testing in other parts of this document. I have used console logs to ensure JavaScript is running as expected in the background. 3 major bugs were identified and rectified. 2 bugs are still unresolved and require further investigation:
+The quiz was thoroughly tested. I have recorded the manual testing in other parts of this document. I have used console logs to ensure JavaScript is running as expected in the background. 3 major bugs were identified and rectified.
 
 ### Bug	Status	Description	Steps To Resolve
 Player Scores array not updating	Fixed	New player scores not adding to the player score array. The same 5 scores displaying all the time.	Wrong method used. Score was being added to the ed of Array which is fixed size. Updated JS code to add score to the beginning of Array and sort the scores accordingly.
-Infinite Timer	Fixed	While testing using console logs, transpired that timer keeps running after the game is finished and until Play Again is clicked.	Moved startTimer function into get new question so when no questions are displayed the timer will not start.
-Progress Dots Missing	Fixed	The aim for the functionality is to display correct answers in green, wrong - red, timed out - grey. While testing noticed that it does not add a dot for timed out answer.	Added a function to updateProgressDot ('empty') when the time is up.
-Skip Question	Unresolved	There is a 2 second setTimeOut after question is answered and new question is displayed. However, if the question is answered with one second left on the timer, both timer functionality  and time out seem to run concurrently. This sometimes results in skipping a question in the quiz. The question is counted as unanswered.	This requires further testing of the JS and possibly redesign of startTimer function.
 Console Error - SEND button	Unresolved	When feedback form button SEND is clicked, console error appears in console. Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
     at HTMLDocument. It does not affect the functionality of the form as the acknowledgement page still displays.	There two forms being used in html file and button types are clashing. It needs additional JS event listeners to handle the SEND button. This was out of scope for this part of the project as the form is not being handled in the backend.
 
@@ -174,10 +150,11 @@ I have also used Google Chrome's Mobile Simulator extension to evaluate the resp
 
 ### Final Test Results:
 
-Size	Device Example	Navigation	Element Alignments	Content Placement	Functionality	Notes
-sm	Samsung Galaxy S20	Good	Good	Good	Good	
-xxl	Desktop	Good	Good	Good	Good	
-Back to top
+ |Size |	Device Example |	Navigation |	Element Alignments |	Content Placement |	Functionality |	Notes |
+ | --- | ----------------- | ------------- | --------------------- | -------------------- | ------------- | ----- |
+ | SM  | Samsung Galaxy S20|	Good |	Good |	Good |	Good	| N/A |
+ | M   | ipad      |   Good | Good  | Good | Good | N/A  |
+ | XXL   | Desktop |	Good  | Good | Good | Good | N/A |
 
 ### Code Validation
 HTML
@@ -185,12 +162,6 @@ I have used W3C HTML Validation Service. I have tested the html file and it came
 ![image of html validator](assets/images/htmlvalidator.png)
 
 Main Quiz Page:
-W3C HTML Validator
-
-Feedback Acknowledgement:
-W3C HTML Validator
-
-404 Page:
 W3C HTML Validator
 
 CSS
@@ -206,24 +177,22 @@ JS Validation Image
 ![image of js validator](assets/images/jsvalidator.png)
 
 ### User Story Testing
-User Story	Result	Pass	Screenshot
-As a user, I want my knowledge to be challenged.	Quiz fetches questions from API so they do not repeat frequently.	Yes	Question View
-As a user, I want to be able to test my knowledge at different levels.	User can choose from 3 levels.	Yes	Level View
-As a user, I want to receive immediate feedback on my quiz answers	Once answer selected, color changes depending whether its correct or not.	Yes	Question Answers
-As a user, I want the instructions to be clear, concise and easily accessible.	Instructions written in plain English and displayed at the of the page	Yes	Instructions View
-As a user, I want navigation to be intuitive.	Buttons named logically	Yes	Start View
-As a user, I want the score system to be transparent.	Immediate feedback on their answers	numbered Score View
-As a user, I want to be able to use website on range of devices.	Quiz is fully functional on all devices	Yes	Mobile View
-As a user, I want to be able to easily contact content creators for feedback or changes.	Feedback form available	Yes	Feedback Form
-As a user, I want the content to be accessible for anyone with diverse needs.	Passed all accessibility tests	Yes	See Accessibility Testing section
-Back to top
+| User Story  |	Result |	Pass |	Screenshot |
+| ----------  | ------ | ------- | ----------- |
+| As a user, I want my knowledge to be challenged. |	Quiz fetches questions from API so they do not repeat frequently. |	Yes	| Question View |
+| As a user, I want to be able to test my knowledge on The Simpsons. |	User can choose from ultiple questions. |	Yes |	Level View |
+| As a user, I want to receive a feedback score on my quiz answers. |	Yes |	Question Answers |
+| As a user, I want the instructions to be clear, concise and easily accessible. |	Instructions are easy to understand with the buttons. |	Yes  |	Instructions View |
+| As a user, I want navigation to be intuitive. |	Buttons named logically	| Yes	| Start View |
+| As a user, I want the score system to be transparent. |	Feedback on their answers | Yes |	Numbered Score View |
+| As a user, I want to be able to use website on range of devices. |	Quiz is fully functional on all devices	| Yes	| Mobile View |
+| As a user, I want to be able to easily contact content creators for feedback or changes. |	Feedback form available |	Yes |	Feedback Form |
+| As a user, I want the content to be accessible for anyone with diverse needs. |	Passed all accessibility tests	| Yes	| See Accessibility Testing section |
 
 ### Feature Testing
 This website was extensively tested for functionality using both Chrome and Edge developer tools.
 
 Every feature was manually tested using the test script and outcomes recorded.
-
-Feature Testing Results
 
 ### Accessibility Testing
 I have used web accessibility evaluation tool WAVE Tool which helps to determine if web content is accessible to individuals with diverse needs. No issues were raised.
@@ -255,7 +224,7 @@ Tests for Mobile on Lighthouse Edge: Lighthouse-Mobile-Edge-Index
 ![lighthouse test](assets/images/lighthouse3.png)
 
 ### Browser Testing
-The Animation Quiz website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Additionally, I have registered with BrowserStack in order to test my page on both Safari and Internet Explorer. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified.
+The Simpsons Ultimate Quiz website was examined for bugs and malfunctions using a variety of browsers. Opera, Firefox, Google Chrome, and Microsoft Edge were selected for thorough testing. Due to its age, Internet Explorer's initial results were quite subpar. On an iPad and an iPhone, I tested Safari. For the website's final version, no significant problems were discovered on the top 4 browsers. The test findings were verified.
 
 ### Deployment
 To deploy the project
@@ -289,7 +258,6 @@ Open your local IDE.
 Change the current working directory to the location where you want the cloned directory.
 Type git clone, and then paste the URL you copied earlier.
 Press Enter to create your local clone.
-Back to top
 
 
 ### Feedback, advice and support:
