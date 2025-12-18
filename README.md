@@ -2,6 +2,8 @@
 
 # The-Simpsons-Ultimate-Quiz
 
+![Screenshot of whole webpage](assets/images/fullscreenshot.png)
+
 The Simpsons Ultimate Quiz delivers an entertaining and fun experience for users interested in exploring the fascinating world of The Simpsons. With its engaging content, user-friendly interface and interactive features. The quiz serves as an enjoyable platform for Simpsons enthusiasts to test their knowledge and learn new facts.
 
 Players recieve a score at the end with a message.
@@ -188,6 +190,15 @@ JS Validation Image
 | As a user, I want to be able to use website on range of devices. |	Quiz is fully functional on all devices	| Yes	| Mobile View |
 | As a user, I want to be able to easily contact content creators for feedback or changes. |	Feedback form available |	Yes |	Feedback Form |
 | As a user, I want the content to be accessible for anyone with diverse needs. |	Passed all accessibility tests	| Yes	| See Accessibility Testing section |
+
+### Automated and Manual Testing
+Automated testing uses scripts and tools to execute tests automaticly, comparing actual results to expected outcomes.
+It is fast, reliable, and great for repetitive tasks, like regression testing or checking basic functionality.
+Automated testing is used on every code change to catch bugs early, Large Test Suites for when you have many tests and
+repetitive tasks e.g login/logout flows.
+Manual testing is when Human testers explore the software trying to break it or fix issues.
+It's flexible, creative, and catches UI/UX issues or unexpected behaviour. It is used when there are new features, or to 
+check for usability issues and old browsers ect.
 
 ### Feature Testing
 This website was extensively tested for functionality using both Chrome and Edge developer tools.
